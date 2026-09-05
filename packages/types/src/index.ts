@@ -10,3 +10,13 @@ export type Site = {
   slug: string;
   status: "draft" | "published";
 };
+
+export type ProjectStatus = "planned" | "active" | "ready" | "archived";
+
+export interface Project {
+  id: string;
+  name: string;
+  slug: string;
+  status: ProjectStatus;
+  createdAt: string;
+}
